@@ -1,7 +1,7 @@
 /* Limpar formatação padrão */
 * {
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 }
 
 body {
@@ -14,12 +14,19 @@ body {
 	background: #fff;
 	border-bottom: 1px solid #d8d8d8;
 	height: 45px;
+	position: fixed;
+	width: 100%;
+	top: 0px;
 }
 
 #area {
 	width: 720px;
 	margin: 0px auto;
-	
+}
+
+#area-principal {
+	width: 720px;
+	margin: 55px auto 10px auto;
 }
 
 #logo {
@@ -30,6 +37,13 @@ body {
 	float: right;
 	padding: 10px 0px;
 }
+
+#postagem {
+	background: #fff;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
 
 /************ Formatação do menu *************/
 
@@ -59,9 +73,31 @@ a:hover {
 
 /* Links active */
 
-
+a:active {
+	color: #535353;
+}
 
 /* Classes */
 .verde {
 	color: #b9c941;
+}
+
+.data-postagem {
+	font-size: 14px;
+	border-bottom: 1px solid #f4f4f4;
+	display: block;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.img-postagem {
+	float: left;
+	margin: 0px 10px 5px 0px;
+}
+
+.postado {
+	border-left: 5px solid #d8d8d8;
+	padding-left: 5px;
+	display: block;
+	margin-top: 10px;
 }
