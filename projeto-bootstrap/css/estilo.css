@@ -1,0 +1,165 @@
+/*
+ * @author Jefferson Gomes
+ * @version 0.1
+ *
+ */
+
+/* ==================== Layout ==================== */
+
+html, body, .capa {
+	height: 100%;
+}
+
+body {
+	background: url('../imagens/capa.png'),
+				url('../imagens/ruido.png'),
+				linear-gradient(50deg, #ff4169, #7c26f8);
+	background-attachment: fixed;
+	font-family: Helvetica, Arial, sans-serif;
+	overflow-x: hidden;
+}
+
+/* -- Barra de navegação -- */
+.img-logo {
+	height: 40px;
+	width: 132px;
+	display: block;
+	background: url('../imagens/spotify.svg') no-repeat;
+	background-size: contain;
+	color: transparent;
+}
+
+nav.navbar-transparente {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.divisor {
+	height: 16px;
+	width: 1px;
+	background-color: #fff;
+	margin: 14px 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-toggler, #rodape .nav a {
+	color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-toggler:hover, #rodape .nav a:hover {
+	color: #9bf0e1;
+}
+
+/* -- imagem de capa -- */
+
+.capa {
+	display: table;
+	width: 100%;
+}
+
+.texto-capa {
+	text-align: center;
+	color: #fff;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/* -- Botões -- */
+
+.btn-custom {
+	color: #fff;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	padding: 10px 35px;
+	text-transform: uppercase;
+	margin: 5px 15px;
+	transition: background 0.5s, color 0.5s;
+}
+
+.btn-roxo {
+	background: #7c25f8;
+}
+.btn-roxo:hover {
+	background-color: #6207e3;
+	color: #fff;
+}
+
+.btn-branco {
+	border: 2px solid #fff;
+}
+.btn-branco:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+/* -- seção serviços -- */
+
+#servicos {
+	background: #fff;
+	padding: 20px 0px;
+}
+
+.calha {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/* -- seção recursos -- */
+
+#recursos {
+	padding: 20px 0px;
+	color: #fff;
+}
+
+.rotacionar {
+	padding-left: 90px;
+	transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+}
+
+footer {
+	background: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+
+.item-rede-social {
+	display: inline;
+}
+
+/* ==================== Tipografia ==================== */
+
+h1 {
+	font-size: 100px;
+	font-weight: 700;
+	letter-spacing: -0.05em;
+	margin-bottom: 40px;
+}
+
+h2 {
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+h3 {
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+#rodape h4 {
+	color: #919496;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+#servicos h2, #servicos h3 {
+	color: #7c25f8;
+}
+
+#recursos h3 {
+	color: #9bf0e1;
+}

@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="open-iconic-master/font/css/open-iconic-bootstrap.css" />
+
+    <!-- Estilo personalizado -->
+    <style type="text/css">
+      .calha {
+        margin: 20px 0px;
+      }
+
+      .transicao {
+        transition: background-color 0.4s;
+      }
+
+      .corlogo, .corlogo:hover {
+        color: lightgreen;
+      }
+    </style>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <!-- Barra de navegação com Bootstrap -->
+
+    <nav class="navbar navbar-expand-md bg-success fixed-top">
+      <div class="container">
+        
+        <a href="#" class="navbar-brand corlogo">LOGO</a>
+        <div class="justify-content-end">
+          <button class="navbar-toggler btn btn-success transicao" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          
+          <ul class="navbar-nav">
+
+            <li class="nav-item">
+              <a class="nav-link btn-success transicao" href="#MODAL">Modal Window</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link btn-success transicao" href="#FORMULARIOS">Formulários</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link btn-success transicao" href="#TABELAS">Tabelas</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link btn-success transicao" href="#BOTOES">Botões</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle btn-success transicao" href="#" id="navbarDropdown" data-toggle="dropdown">Outros Estudos</a>
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item transicao" href="#IMAGENS">Imagens</a></li>
+                <li><a class="dropdown-item transicao" href="#TOOLTIP-POPOVER">Tooltip e Popover</a></li>
+                <li><a class="dropdown-item transicao" href="#TABS">Tabs</a></li>
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
+
+
+    <div class="container">
+
+      <!-- Modal Window -->
+
+      <div class="row">
+        <a name="MODAL"></a><br><br><br><br>
+      </div>
+
+      <div class="border-bottom border-success calha">
+        <h1>Modal Window com Bootstrap</h1>
+      </div>
+
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#janela">
+        Logar
+      </button>
+
+      <!-- Janela -->
+
+      <form class="modal fade" id="janela">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            
+            <!-- cabeçalho -->
+            <div class="modal-header">
+
+              <h4 class="modal-title">Efetuar login</h4>
+              <button type="button" class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>
+
+            </div>
+
+            <!-- corpo -->
+            <div class="modal-body">
+              
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+              </div>
+
+              <div class="form-group">
+                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+              </div>
+
+            </div>
+
+            <!-- rodape -->
+            <div class="modal-footer">
+              
+              <button type="button" class="btn btn-outline-success" data-dismiss="modal">
+                Cancelar
+              </button>
+
+              <button type="submit" class="btn btn-success">
+                Logar
+              </button>
+
+            </div>
+
+          </div>
+        </div>
+      </form>
+      
+      <!-- Formulários com Bootstrap -->
+
+      <div class="row">
+        <a name="FORMULARIOS"></a><br><br><br><br>
+      </div>
+
+      <div class="border-bottom border-success calha">
+        <h1>Formulário com Bootstrap</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8">
+          <h3>Cadastre-se</h3>
+
+          <form>
+            
+            <div class="form-group">
+              <label for="nome">Nome:</label>
+              <input type="text" class="form-control" id="nome" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail:</label>
+              <input type="email" class="form-control" id="email" />
+            </div>
+
+            <div class="form-group">
+              <label for="senha">Senha:</label>
+              <input type="password" class="form-control" id="senha" />
+            </div>
+
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" /> Aceito os Termos de Uso.
+              </label>
+            </div>
+
+            <div class="radio">
+              <label>
+                <input type="radio" name="opcao" /> PHP
+              </label>
+
+              <label>
+                <input type="radio" name="opcao" /> Java
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-outline-success">Cadastrar</button>
+          </form>
+
+        </div>
+
+        <div class="col-sm-4">
+          <h3>Logar</h3>
+
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Digite seu nome" />
+          </div>
+
+          <div class="form-group">
+            <input type="password" class="form-control" placeholder="Digite sua senha">
+          </div>
+
+          <button type="submit" class="btn btn-success">Login</button>
+
+
+
+        </div>
+      </div>
+      <br>
+
+      <!-- Tabelas com Bootstrap -->
+      
+      <div class="row">
+        <a name="TABELAS"></a><br><br><br><br>
+      </div>
+
+      <div class="border-bottom border-success calha">
+        <h1>Tabela com Bootstrap</h1>
+      </div>
+
+      <div class="row">
+        <table class="table table-striped table-bordered table-hover table-condensed">
+          <thead>
+            <tr>
+              <th>Produto</th>
+              <th>Fabricante</th>
+              <th>Preço</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Notebook 960</td>
+              <td>HP</td>
+              <td>R$ 1.900,00</td>
+            </tr>
+            <tr>
+              <td>MacBook E</td>
+              <td>Apple</td>
+              <td>R$ 4.000,00</td>
+            </tr>
+            <tr>
+              <td>Smartphone J3</td>
+              <td>Samsung</td>
+              <td>R$ 700,00</td>
+            </tr>
+            <tr>
+              <td>Fone Intra-auricular</td>
+              <td>Phillips</td>
+              <td>R$ 30,00</td>
+            </tr>
+            <tr>
+              <td>Tablet S3</td>
+              <td>Samsung</td>
+              <td>R$ 600,00</td>
+            </tr>
+            <tr>
+              <td>Mesa Digitalizadora</td>
+              <td>Wacon</td>
+              <td>R$ 1.100,00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br>
+
+      <!-- Botões com Bootstrap -->
+      
+      <div class="row">
+        <a name="BOTOES"></a><br><br><br><br>
+      </div>
+
+      <div class="border-bottom border-success calha">
+        <h1>Botões com Bootstrap</h1>
+      </div>
+
+      <div class="row">
+        
+        <div class="col-sm-6">
+          <h3>Botões padrão</h3>
+          <a href="#" class="btn btn-primary  calha">Botão &lta&gt</a>
+          <input type="submit" class="btn btn-primary  calha" value="Botão <input>" />
+          <button class="btn btn-primary  calha">Botão &ltbutton&gt</button>
+        </div>
+       
+
+        <div class="col-sm-6">
+          <h3>Tipos de botões</h3>
+          <div class="col-sm-12">
+            <button class="btn btn-primary calha">Primary</button>
+            <button class="btn btn-secondary calha">Secondary</button>
+            <button class="btn btn-success calha">Success</button>
+            <button class="btn btn-danger calha">Danger</button>
+          </div>
+          <div class="col-sm-12">
+            <button class="btn btn-warning calha">Warning</button>
+            <button class="btn btn-info calha">Info</button>
+            <button class="btn btn-light calha">Light</button>
+            <button class="btn btn-dark calha">Dark</button>
+          </div>
+        </div>
+      
+      </div> <!-- ********** fim row ********** -->
+
+      <div class="row">
+
+        <div class="col-sm-6">
+          <h3>Tamanho dos botões</h3>
+          <button class="btn btn-primary btn-sm calha">Botão (btn-sm)</button>
+          <button class="btn btn-primary btn-md calha">Botão (sem classe)</button>
+          <button class="btn btn-primary btn-lg calha">Botão (btn-lg)</button>
+        </div>
+
+        <div class="col-sm-6">
+          <h3>Botões em bloco</h3>
+          <button class="btn btn-primary btn-block calha">Botão em bloco (btn-block)</button>
+        </div>
+
+      </div> <!-- ********** fim row ********** -->
+
+      <div class="row">
+        
+          <h3>Botões outline</h3>
+          <div class="col-sm-12">
+            <button class="btn btn-outline-primary calha">Primary</button>
+            <button class="btn btn-outline-secondary calha">Secondary</button>
+            <button class="btn btn-outline-success calha">Success</button>
+            <button class="btn btn-outline-danger calha">Danger</button>
+            <button class="btn btn-outline-warning calha">Warning</button>
+            <button class="btn btn-outline-info calha">Info</button>
+            <button class="btn btn-outline-light calha">Light</button>
+            <button class="btn btn-outline-dark calha">Dark</button>
+          </div>
+      
+      </div> <!-- ********** fim row ********** -->
+      <br>
+
+      <!-- Imagens com Bootstrap -->
+
+      <div class="row">
+        <a name="IMAGENS"></a><br><br><br><br>
+      </div>
+
+      <div class="border-bottom border-success calha">
+        <h1>Imagens com Bootstrap</h1>
+      </div>
+
+      <div class="row calha">
+        <div class="col-sm-6">
+          <h3 class="calha">Imagem responsiva</h3>
+          <img src="imagens/uvas.png" class="img-fluid mx-auto d-block" />
+        </div>
+        <div class="col-sm-6">
+          <h3 class="calha">Imagem responsiva com <em>rounded</em></h3>
+          <img src="imagens/uvas.png" class="img-fluid rounded mx-auto d-block" />
+        </div>
+      </div>
+
+      <div class="row calha">
+        <div class="col-sm-6">
+          <h3 class="calha">Imagem thumbnail</h3>
+          <img src="imagens/uvas200.png" class="img-thumbnail mx-auto d-block" />
+        </div>
+        <div class="col-sm-6">
+          <h3 class="calha">Imagem responsiva com <em>rounded</em></h3>
+          <img src="imagens/uvas200.png" class="img-fluid rounded mx-auto d-block" />
+        </div>
+      </div>
+
+      <!-- Tooltip e Popover -->
+
+      <div class="row">
+        <a name="TOOLTIP-POPOVER"></a><br><br><br><br>
+      </div>
+
+      <div class="border-bottom border-success calha">
+        <h1>Tooltip e Popover com Bootstrap</h1>
+      </div>
+
+      <div class="row calha">
+        
+        <div class="col-sm-6">
+
+          <h3 class="calha">Tooltip</h3>
+          <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="right" title="Não entre em pânico">
+            Dica
+          </button>
+          <br><br>
+
+          <div class="btn-toolbar">
+            <div class="btn-group">
+              
+              <button type="button" class="btn btn-outline-success" data-toggle="tooltip" data-placement="top" title="Play">
+                <span class="oi oi-media-play"></span>
+              </button>
+
+              <button type="button" class="btn btn-outline-success" data-toggle="tooltip" data-placement="top" title="Pause">
+                <span class="oi oi-media-pause"></span>
+              </button>
+
+              <button type="button" class="btn btn-outline-success" data-toggle="tooltip" data-placement="top" title="Stop">
+                <span class="oi oi-media-stop"></span>
+              </button>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6">
+          <h3 class="calha">Popover</h3>
+          <button type="button" class="btn btn-success" data-toggle="popover" title="Detalhes" data-content="Lorem ipsum dolorem sit amet" data-placement="right">
+            Detalhes
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Tabs com Bootstrap -->
+
+      <div class="row">
+        <a name="TABS"></a><br><br><br><br>
+      </div>
+
+      <div class="border-bottom border-success calha">
+        <h1>Tabs com Bootstrap</h1>
+      </div>
+
+      <!-- Criação das tabs -->
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#info" data-toggle="tab">Informações</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#aval" data-toggle="tab">Avaliações</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#compre" data-toggle="tab">Compre também</a>
+        </li>
+      </ul>
+
+      <!-- Conteúdo das tabs -->
+      <div class="tab-content">
+        
+        <!-- Tab Informações -->
+        <div class="tab-pane active" id="info">
+          <p class="calha">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <!-- Tab Avaliações -->
+        <div class="tab-pane" id="aval">
+          <p class="calha">Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+
+        <!-- Tab Compre também -->
+        <div class="tab-pane" id="compre">
+          <p class="calha">Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+      </div>
+
+    </div>
+    <br><br><br><br>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Inicializando o Tooltip -->
+    <script type="text/javascript">
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="popover"]').popover()
+      })
+    </script>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
