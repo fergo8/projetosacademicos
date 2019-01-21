@@ -6,11 +6,11 @@ namespace ElementsComposition.Entities
 {
     class Worker
     {
-        private string Name { get; set; }
-        private WorkerLevel Level { get; set; }
-        private double BaseSalary { get; set; }
-        private Department Department { get; set; }
-        private List<HourContract> Contracts { get; set; } = new List<HourContract>();
+        public string Name { get; set; }
+        public WorkerLevel Level { get; set; }
+        public double BaseSalary { get; set; }
+        public Department Department { get; set; }
+        public List<HourContract> Contracts { get; set; } = new List<HourContract>();
 
         public Worker()
         {
