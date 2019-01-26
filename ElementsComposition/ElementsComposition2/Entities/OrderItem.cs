@@ -1,4 +1,6 @@
-﻿namespace ElementsComposition2.Entities
+﻿using System.Globalization;
+
+namespace ElementsComposition2.Entities
 {
     class OrderItem
     {
@@ -20,6 +22,17 @@
         public double SubTotal()
         {
             return Quantity * Price;
+        }
+
+        public override string ToString()
+        {
+            return Product.Name
+                + ", $"
+                + Price.ToString("F2", CultureInfo.InvariantCulture)
+                + ", Quantity: "
+                + Quantity
+                + ", Subtotal: $"
+                + SubTotal().ToString("F2", CultureInfo.InvariantCulture);
         }
     }
 }

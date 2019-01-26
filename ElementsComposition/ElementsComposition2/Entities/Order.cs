@@ -1,6 +1,7 @@
 ﻿using ElementsComposition2.Entities.Enums;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 
 namespace ElementsComposition2.Entities
@@ -41,6 +42,25 @@ namespace ElementsComposition2.Entities
                 sum += i.SubTotal();
             }
             return sum;
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine("Order moment: " + Moment.ToString("dd/MM/yyyy HH:mm:ss"));
+            sb.AppendLine("Order status: " + Status);
+            sb.AppendLine("Client: " + Client);
+            sb.AppendLine("Order itens: ");
+
+            foreach (OrderItem i in Itens)
+            {
+                sb.AppendLine(i.ToString());
+            }
+
+            sb.AppendLine("Total price: $" + Total().ToString("F2", CultureInfo.InvariantCulture));
+
+            return sb.ToString();
         }
     }
 }
