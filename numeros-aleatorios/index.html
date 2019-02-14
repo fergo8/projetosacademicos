@@ -7,48 +7,87 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
 
     <style>
-    .padding {
-        padding-top: 100px;
+
+        body {
+            background-color: #ccccee;
+        }
+
+    .section-style {
+        background-color: #fff;
+        margin-top: 100px;
+        padding: 30px 20px;
+        border: 1px solid #aaa;
+        border-radius: 15px;
+        box-shadow: 2px 3px 4px #aaa;
     }
 
-    .estilo {
-        padding: 20px;
-        border: 1px solid #999;
-        margin: 5px;
-        width: 100px;
+    .style {
+        border: 1px solid #000;
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+
+    }
+
+    .title {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .btn {
+        color: #fff;
+        background-color: #4444aa;
+        margin: 30px auto;
+        display: block;
+        max-width: 200px;
     }
     </style>
-    <title>Hello, world!</title>
+    <title>Números Aleatórios</title>
   </head>
   <body>
     
-    <section class="container padding">
+    <section class="container section-style">
+        <div>
+            <h1 class="title">Gerador de Números Aleatórios</h1>
+        </div>
         
+
         <div class="row">
-            <button type="button" onclick="sortear()" class=" btn btn-success">Sortear</button>
+            <button type="button" onclick="sortear()" class="btn btn-purple">Sortear</button>
         </div>
         
         <div class="row">
-            <span class="estilo" id="num0"></span>
-            <span class="estilo" id="num1"></span>
-            <span class="estilo" id="num2"></span>
-            <span class="estilo" id="num3"></span>
-            <span class="estilo" id="num4"></span>
-            <span class="estilo" id="num5"></span>
-            <span class="estilo" id="num6"></span>
-            <span class="estilo" id="num7"></span>
-            <span class="estilo" id="num8"></span>
-            <span class="estilo" id="num9"></span>
-            <span class="estilo" id="num10"></span>
-            <span class="estilo" id="num11"></span>
-            <span class="estilo" id="num12"></span>
-            <span class="estilo" id="num13"></span>
-            <span class="estilo" id="num14"></span>
+            <div class="col-sm-12">
+                <div class="style" id="num0"></div>
+                <div class="style" id="num1"></div>
+                <div class="style" id="num2"></div>
+                <div class="style" id="num3"></div>
+                <div class="style" id="num4"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="style" id="num5"></div>
+                <div class="style" id="num6"></div>
+                <div class="style" id="num7"></div>
+                <div class="style" id="num8"></div>
+                <div class="style" id="num9"></div>
+            </div>
         </div>
         
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="style" id="num10"></div>
+                <div class="style" id="num11"></div>
+                <div class="style" id="num12"></div>
+                <div class="style" id="num13"></div>
+                <div class="style" id="num14"></div>
+            </div>
+        </div>
 
     </section>
 
@@ -59,7 +98,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
-  
+    
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+
     <script>
         function sortear() {
 
@@ -74,7 +115,4 @@
     </script>
 
 </body>
-
-
-  
 </html>
