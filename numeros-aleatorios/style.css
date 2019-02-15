@@ -1,0 +1,38 @@
+body {
+    background-color: #ccccee;
+}
+
+.section-style {
+    background-color: #fff;
+    margin-top: 100px;
+    padding: 30px 20px;
+    border: 1px solid #aaa;
+    border-radius: 15px;
+    box-shadow: 2px 3px 4px #aaa;
+}
+
+.section-style div.row div.col-sm-12 {
+    display: inline;
+    margin: 10px auto;
+}
+
+.style {
+    border: 1px solid #000;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+
+}
+
+.title {
+    text-align: center;
+    font-size: 25px;
+}
+
+.btn {
+    color: #fff;
+    background-color: #4444aa;
+    margin: 30px auto;
+    display: block;
+    max-width: 200px;
+}
