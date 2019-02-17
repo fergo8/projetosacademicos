@@ -35,7 +35,7 @@ namespace Exceptions.Entities
 
         public override string ToString()
         {
-            return "Room "
+            return "Room: "
                 + RoomNumber
                 + ", check in: "
                 + CheckIn.ToString("dd/MM/yyyy")
