@@ -9,6 +9,7 @@ body {
     border: 1px solid #aaa;
     border-radius: 15px;
     box-shadow: 2px 3px 4px #aaa;
+    width: 90%;
 }
 
 .section-style div.row div.col-sm-12 {
@@ -17,7 +18,7 @@ body {
 }
 
 .style {
-    border: 1px solid #000;
+    border: 1px solid #004400;
     border-radius: 100%;
     display: table;
     width: 85px;
@@ -42,6 +43,7 @@ body {
     background-color: #007700;
     color: #fff;
     padding: 15px 0px;
+    border-radius: 10px;
 }
 
 .btn {
@@ -66,3 +68,24 @@ body {
         display: inline-block;
         margin: 10px 5px
     }
+
+@media only screen and (max-width: 414px){
+    .style {
+        border-radius: 100%;
+        display: table;
+        width: 35px;
+        height: 50px;
+        transition: height .3s;
+    }
+    
+    .style:hover {
+        height: 40px;
+    }
+    
+    .num {
+        text-align: center;
+        font-size: 18px;
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
